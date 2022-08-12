@@ -7,56 +7,45 @@
     </title>
 </head>
 <body>
-<div class = "outer-div">
-    <div class = "inner-div">
-        썸네일 이미지1
+<div class = "container">
+    <div class = "row-table">
+        <div class ="item">썸네일 이미지</div>
+        <div class ="item">썸네일 이미지</div>
+        <div class ="item">썸네일 이미지</div>
     </div>
-    <div class = "inner-div">
-        썸네일 이미지2
+    <div class = "row-table">
+        <div class ="item">썸네일 이미지</div>
+        <div class ="item">썸네일 이미지</div>
+        <div class ="item">썸네일 이미지</div>
     </div>
-    <div class = "inner-div">
-        썸네일 이미지3
-    </div>
-</div>
-<div class = "outer-div">
-    <div class = "inner-div">
-        썸네일 이미지4
-    </div>
-    <div class = "inner-div">
-        썸네일 이미지5
-    </div>
-    <div class = "inner-div">
-        썸네일 이미지6
-    </div>
-</div>
-<div class = "outer-div">
-    <div class = "inner-div">
-        썸네일 이미지7
-    </div>
-    <div class = "inner-div">
-        썸네일 이미지8
-    </div>
-    <div class = "inner-div">
-        썸네일 이미지9
+    <div class = "row-table">
+        <div class ="item">썸네일 이미지</div>
+        <div class ="item">썸네일 이미지</div>
+        <div class ="item">썸네일 이미지</div>
     </div>
 </div>
 </body>
 <style>
-    div.outer-div{
-        width : 90%;
-        text-align: center;
-        height:100px;
-        display : flex;
-        gap : 5px;
-        color : red;
+    div.container{
+        width : 100%;
+        display: flex;
+        flex-wrap: wrap;
     }
-    div.inner-div{
-        width:30%;
-        height:90%;
-        float : left;
-        border: solid darkblue;
+    div.row-table{
+        width : 100%;
+        display: flex;
+    }
+    div.item{
+        width : 100%;
+        aspect-ratio: 16/9;
+        margin : 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid;
+        border-color: darkblue;
         border-radius: 5px;
-        margin: auto;
+        color : red;
     }
 </style>
 </html>
