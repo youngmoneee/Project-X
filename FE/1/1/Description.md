@@ -37,6 +37,11 @@ Chrome , Safari , 개발자 도구를 탑재하고 있는 브라우저
    - Grid : 2차원으로 수평, 수직을 동시에 나눌 수 있음
    - 두 값은 display 태그의 값
 
-4. 내부 컨텐츠 내부 정렬
+3. 내부 컨텐츠 내부 정렬
    - div 박스 내부에 텍스트가 있을 시, 매 번 padding으로 위에 50% 이런 식으로 줘서 높이 맞췄었는데 align-items 속성으로 정렬 가능하다 ..
-   - 
+   - justify-contents : 좌우 정렬
+   - align-contents : 위아래 정렬
+
+4. objective-fit
+   - svg, video, img, object 등 크기가 다양한 객체들이 부모 객체 크기에 맞추어 조정됨.
+   - cover : 자주 쓰게 될 것 같음, 종횡비가 유지되며 너비, 높이를 가득 채울 때까지 확대됨

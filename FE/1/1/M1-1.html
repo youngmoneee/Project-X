@@ -9,22 +9,41 @@
 <body>
 <div class = "container">
     <div class = "row-table">
-        <div class ="item">썸네일 이미지</div>
-        <div class ="item">썸네일 이미지</div>
-        <div class ="item">썸네일 이미지</div>
+        <div class ="item">
+            <img src = "./kitten.jpeg" title="썸네일 이미지1" alt="썸네일 이미지1">
+        </div>
+        <div class ="item">
+            <img src = "./kitten.jpeg" title="썸네일 이미지2" alt="썸네일 이미지2">
+        </div>
+        <div class ="item">
+            <img src = "./kitten.jpeg" title="썸네일 이미지3" alt="썸네일 이미지3">
+        </div>
     </div>
     <div class = "row-table">
-        <div class ="item">썸네일 이미지</div>
-        <div class ="item">썸네일 이미지</div>
-        <div class ="item">썸네일 이미지</div>
+        <div class ="item">
+            <img src = "./kitten.jpeg" title="썸네일 이미지4" alt="썸네일 이미지4">
+        </div>
+        <div class ="item">
+            <img src = "./kitten.jpeg" title="썸네일 이미지5" alt="썸네일 이미지5">
+        </div>
+        <div class ="item">
+            <img src = "./kitten2.jpeg" title="썸네일 이미지6" alt="썸네일 이미지6">
+        </div>
     </div>
     <div class = "row-table">
-        <div class ="item">썸네일 이미지</div>
-        <div class ="item">썸네일 이미지</div>
-        <div class ="item">썸네일 이미지</div>
+        <div class ="item">
+            <img src = "./kitten.jpeg" title="썸네일 이미지7" alt="썸네일 이미지7">
+        </div>
+        <div class ="item">
+            <img src = "./kitten.jpeg" title="썸네일 이미지8" alt="썸네일 이미지8">
+        </div>
+        <div class ="item">
+            <img src = "./kitten.jpeg" title="썸네일 이미지9" alt="썸네일 이미지9">
+        </div>
     </div>
 </div>
 </body>
+
 <style>
     div.container{
         width : 100%;
@@ -33,19 +52,25 @@
     }
     div.row-table{
         width : 100%;
+        height : auto;
         display: flex;
     }
     div.item{
         width : 100%;
-        aspect-ratio: 16/9;
+        aspect-ratio: 4/3;
         margin : 16px;
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 2px solid;
-        border-color: darkblue;
+        border: 2px solid darkblue;
         border-radius: 5px;
         color : red;
+        overflow: hidden;
+    }
+    div.item img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
     }
 </style>
 </html>
