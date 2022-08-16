@@ -8,12 +8,20 @@ div#container{
     justify-items: center;
 }
 
-#container .content {
+#container .cell {
     display : flex;
     flex-direction: column;
     border: 2px solid darkblue;
     border-radius: 5px;
     padding : 0 10px;
+}
+
+div.title {
+    font-size: 2rem;
+}
+div.content {
+    font-size: 1rem;
+    min-height: 2rem;
 }
 
 .thumbimg {
