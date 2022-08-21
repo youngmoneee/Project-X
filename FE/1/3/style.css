@@ -1,0 +1,31 @@
+div#container{
+    width : 100%;
+    height : auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    gap : 10px;
+    justify-items: center;
+}
+
+#container .cell {
+    display : flex;
+    flex-direction: column;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+    padding : 0 10px;
+}
+
+div.title {
+    font-size: 2rem;
+}
+div.content {
+    font-size: 1rem;
+    min-height: 2rem;
+}
+
+.thumbimg {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
