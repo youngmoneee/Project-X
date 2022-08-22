@@ -16,4 +16,16 @@ function window_pop(elem) {
     }
 }
 
-titles.forEach(window_pop)
+
+function layer_pop(elem) {
+    elem.onclick = function () {
+        let layer = document.getElementById("layer-pop");
+        document.getElementById('layer-content').textContent = elem.textContent;
+        layer.style.display = "flex";
+        console.log('asd')
+        document.getElementById('layer-close').onclick = function () {
+            layer.style.display = "none";
+        }
+    };
+}
+titles.forEach(layer_pop)

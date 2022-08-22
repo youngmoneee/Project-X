@@ -29,3 +29,30 @@ div.content {
     height:100%;
     object-fit: cover;
 }
+
+#layer-pop {
+    position : fixed;
+    flex-direction: column;
+    padding : 10%;
+    top : 10%;
+    left : 10%;
+    margin : 0 auto;
+    background-color: beige;
+    display: none;
+    align-content: center;
+    justify-content: center;
+    width : 10%;
+    height : 10%;
+    z-index: 1;
+}
+
+#layer-content {
+    position : relative;
+    width : 100%;
+    text-align: center;
+    margin : 10% auto;
+}
+
+#layer-close {
+    position : relative;
+}
