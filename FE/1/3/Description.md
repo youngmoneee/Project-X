@@ -27,6 +27,7 @@ Chrome , Safari , 개발자 도구를 탑재하고 있는 브라우저
    - 동적인 동작을 위해 ECMA script라는 policy가 사용되며 JavaScript는 해당 표준의 구현체
 2. Event
    - 필드의 내용 변경, 클릭, 스크롤 등의 모든 액션을 의미
+   - 태그에 onclick 등의 이벤트를 작성하거나, addEventListner를 통해 특정 이벤트에 대한 동작을 설정 가능
 3. DOM
    - Document Object Model
      - 문서의 요소들을 객체화해 HTML을 ROOT로 하는 트리 구조로 표현
@@ -44,3 +45,10 @@ Chrome , Safari , 개발자 도구를 탑재하고 있는 브라우저
       - body의 일부만 로드
       - script 로드에 시간이 오래걸림
     과 같은 상황에서 객체를 클릭해도 아무 일이 일어나지 않을 수 있다고 생각함
+    - 0822 comment
+      - 스크립트의 실행은 마지막에 일어나되 스크립트를 미리 로드해 속도를 줄이기 위해 addEventListner('load', ~)를 사용할 수 있겠다는 생각
+6. Window
+   - 관계 : window.open으로 새로운 창을 열 때, opener라는 super 객체로 연결(호출자)
+   - 창을 호출하는 객체(window)에 값을 넣어 호출되는 윈도우에서 해당 값을 사용 가능
+   - 처음에 document.write을 통해 값을 변경했으나, html 문서가 해당 단순 text로 덮어씌워지는 코드라고 해서 폐기
+
