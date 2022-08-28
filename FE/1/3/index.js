@@ -28,4 +28,4 @@ function layer_pop(elem) {
         }
     };
 }
-titles.forEach(layer_pop)
+titles.forEach(window_pop)
